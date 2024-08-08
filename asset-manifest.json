@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/OC_P13_SportSee/static/css/main.97b07749.css",
-    "main.js": "/OC_P13_SportSee/static/js/main.ab4001ad.js",
-    "static/media/icon-security.png": "/OC_P13_SportSee/static/media/icon-security.1c819fa1007a5c53e6a9.png",
-    "static/media/argentBankLogo.png": "/OC_P13_SportSee/static/media/argentBankLogo.e031a16c76ab9bbbf78a.png",
-    "static/media/icon-chat.png": "/OC_P13_SportSee/static/media/icon-chat.e238539d82b5a5f63c33.png",
-    "static/media/bank-tree.webp": "/OC_P13_SportSee/static/media/bank-tree.07c4b6f634596ddfdf57.webp",
-    "static/media/icon-money.png": "/OC_P13_SportSee/static/media/icon-money.8ec88bb1a5070fd6513a.png",
-    "static/media/404-green.webp": "/OC_P13_SportSee/static/media/404-green.988dba81c1abc80a4243.webp",
-    "index.html": "/OC_P13_SportSee/index.html",
-    "main.97b07749.css.map": "/OC_P13_SportSee/static/css/main.97b07749.css.map",
-    "main.ab4001ad.js.map": "/OC_P13_SportSee/static/js/main.ab4001ad.js.map"
+    "main.css": "/OC_P13_ArgentBank/static/css/main.f18b19a3.css",
+    "main.js": "/OC_P13_ArgentBank/static/js/main.dbfad357.js",
+    "static/media/icon-security.png": "/OC_P13_ArgentBank/static/media/icon-security.1c819fa1007a5c53e6a9.png",
+    "static/media/argentBankLogo.png": "/OC_P13_ArgentBank/static/media/argentBankLogo.e031a16c76ab9bbbf78a.png",
+    "static/media/icon-chat.png": "/OC_P13_ArgentBank/static/media/icon-chat.e238539d82b5a5f63c33.png",
+    "static/media/bank-tree.webp": "/OC_P13_ArgentBank/static/media/bank-tree.07c4b6f634596ddfdf57.webp",
+    "static/media/icon-money.png": "/OC_P13_ArgentBank/static/media/icon-money.8ec88bb1a5070fd6513a.png",
+    "static/media/404-green.webp": "/OC_P13_ArgentBank/static/media/404-green.988dba81c1abc80a4243.webp",
+    "index.html": "/OC_P13_ArgentBank/index.html",
+    "main.f18b19a3.css.map": "/OC_P13_ArgentBank/static/css/main.f18b19a3.css.map",
+    "main.dbfad357.js.map": "/OC_P13_ArgentBank/static/js/main.dbfad357.js.map"
   },
   "entrypoints": [
-    "static/css/main.97b07749.css",
-    "static/js/main.ab4001ad.js"
+    "static/css/main.f18b19a3.css",
+    "static/js/main.dbfad357.js"
   ]
 }
