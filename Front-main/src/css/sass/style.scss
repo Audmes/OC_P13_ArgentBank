@@ -21,12 +21,16 @@
   'layouts/footer';
 
 // 4. Components
-// @import
-//   'components/';
+@import
+  'components/hero',
+  'components/feature',
+  'components/form';
 
 // 5. Pages
 @import
-    'pages/home';
+    'pages/home',
+    'pages/profile',
+    'pages/error';
 
 // 6. Themes
 // @import

@@ -8,12 +8,6 @@
 /**
 * Resets
 **/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 /**
 * Basic styles
 **/
@@ -35,43 +29,56 @@ body {
   min-height: 100vh;
 }
 
-.main {
+.bg-dark {
+  background-color: #12002b;
+}
+
+/**
+* Basic typography style for copy text
+*/
+/**
+* Helper classes
+**/
+/**
+* Header styles
+**/
+header .main {
   flex: 1;
 }
-.main-nav {
+header .main-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5px 20px;
 }
-.main-nav a {
+header .main-nav a {
   color: #2c3e50;
   font-weight: bold;
 }
-.main-nav a.router-link-exact-active {
+header .main-nav a.router-link-exact-active {
   color: #42b983;
 }
-.main-nav-item {
+header .main-nav-item {
+  display: flex;
+  align-items: center;
   margin-right: 0.5rem;
   text-decoration: none;
 }
-.main-nav-item:hover {
+header .main-nav-item i {
+  margin-right: 0.3rem;
+}
+header .main-nav-item:hover {
   text-decoration: underline;
 }
-.main-nav-logo {
+header .main-nav-logo {
   display: flex;
   align-items: center;
 }
-.main-nav-logo-image {
+header .main-nav-logo-image {
   width: 200px;
   max-width: 100%;
 }
-
-.bg-dark {
-  background-color: #12002b;
-}
-
-.sr-only {
+header .sr-only {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
   -webkit-clip-path: inset(50%) !important;
@@ -85,10 +92,27 @@ body {
   white-space: nowrap !important; /* 3 */
 }
 
+/**
+* Footer styles
+**/
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 1.5rem;
+  border-top: 2px solid #ccc;
+}
+.footer-text {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+* Hero Component
+**/
 .hero {
   position: relative;
   height: 300px;
-  background-image: url("../assets/bank-tree.jpeg");
+  background-image: url("../assets/images/bank-tree.webp");
   background-position: 0 -50px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -137,6 +161,9 @@ body {
   }
 }
 
+/**
+* Feature Component
+**/
 .features {
   display: flex;
   flex-direction: column;
@@ -166,17 +193,9 @@ body {
   font-weight: bold;
 }
 
-.sign-in-button {
-  display: block;
-  width: 100%;
-  margin-top: 1rem;
-  padding: 8px;
-  border-color: #00bc77;
-  background-color: #00bc77;
-  color: #fff;
-  font-size: 1.1rem;
-  font-weight: bold;
-}
+/**
+* Form Component
+**/
 .sign-in-content {
   box-sizing: border-box;
   width: 300px;
@@ -188,31 +207,54 @@ body {
 .sign-in-icon {
   font-size: 5rem;
 }
+.sign-in-button {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 8px;
+  border-color: #00bc77;
+  background-color: #00bc77;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
 
-.input-remember {
+.sign-in-content form .input-remember {
   display: flex;
 }
-.input-remember label {
+.sign-in-content form .input-remember label {
   margin-left: 0.25rem;
 }
-.input-error {
+.sign-in-content form .input-error {
   margin-top: 15px;
   color: red;
 }
-.input-wrapper {
+.sign-in-content form .input-wrapper {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
   text-align: left;
 }
-.input-wrapper label {
+.sign-in-content form .input-wrapper label {
   font-weight: bold;
 }
-.input-wrapper input {
+.sign-in-content form .input-wrapper input {
   padding: 5px;
   font-size: 1.2rem;
 }
+.sign-in-content form .error-message {
+  color: red;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 25px;
+}
 
+/**
+* Home page
+*/
+/**
+* Profile page
+*/
 .account {
   box-sizing: border-box;
   display: flex;
@@ -274,36 +316,38 @@ body {
   color: #fff;
 }
 
-/**
-* Basic typography style for copy text
-*/
-/**
-* Helper classes
-**/
-/**
-* Header styles
-**/
-.header {
+.error {
+  min-height: 610px;
+  width: 100%;
+}
+@media (max-width: 920px) {
+  .error {
+    min-height: 680px;
+  }
+}
+@media (min-width: 1900px) {
+  .error {
+    min-height: 820px;
+  }
+}
+.error .green-error {
+  margin-top: 6rem;
+  width: 47%;
+}
+.error .text-error {
+  margin-top: 2rem;
+}
+.error .button-404 {
+  align-items: center;
+  background-color: #00bc77;
+  border-color: #00bc77;
   color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
   margin-bottom: 2rem;
+  margin-top: 2rem;
+  max-width: 12.5rem;
+  padding: 0.8rem;
 }
-
-/**
-* Footer styles
-**/
-.footer {
-  display: flex;
-  justify-content: center;
-  padding: 2rem 0 1.5rem;
-  border-top: 2px solid #ccc;
-}
-.footer-text {
-  margin: 0;
-  padding: 0;
-}
-
-/**
-* Home page
-*/
 
 /*# sourceMappingURL=style.css.map */
