@@ -7,13 +7,12 @@
 **/
 header {
     .main {
-        flex: 1;
-    
         &-nav {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 5px 20px;
+            margin-right: 0.5rem;  
     
             a {
                 color: #2c3e50;
@@ -23,11 +22,22 @@ header {
                     color: #42b983;
                 }
             }
+
+            .connected { 
+                display: flex;
+                gap: 1rem;   
+                // margin-right: 0.5rem;   
+
+                & p { font-weight: bold;}
+                & i { font-size: 1.1rem;
+                      margin-right: 0.5rem;
+                    }
+            }
     
             &-item {
                 display: flex;
                 align-items: center;
-                margin-right: 0.5rem;
+                // margin-right: 0.5rem;
                 text-decoration: none;
     
                 i {
