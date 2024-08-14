@@ -57,7 +57,7 @@ function Profile () {
             {AccountCardData.map((data) => (
                 /* Return AccountCard component */
                 <AccountCard 
-                    key={data.userId}
+                    key={data.id}
                     title={data.title}
                     amount={data.amount}
                     description={data.description}
