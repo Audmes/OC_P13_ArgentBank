@@ -4,13 +4,10 @@ import Form from '../components/Form';
 /* Login page */
 function Login () {
     return (
-        <div className='signin-page'>
-            <main className='bg-dark'>
-                {/* Returns form component */}
-                < Form />
-            </main>
-        </div>
-        
+        <main className='main bg-dark'>
+            {/* Returns form component */}
+            < Form />
+        </main>      
     )
 }
 

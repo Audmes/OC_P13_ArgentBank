@@ -77,6 +77,7 @@ function Form () {
                         id='username' 
                         type='text'
                         value={email}
+                        defaultValue={email}
                         onChange={(e) => setEmail(e.target.value)} 
                         autoComplete='off'
                     />
@@ -87,6 +88,7 @@ function Form () {
                         id='password' 
                         type='password'
                         value={password}
+                        defaultValue={password}
                         onChange={(e) => setPassword(e.target.value)} 
                         autoComplete='off'
                     />

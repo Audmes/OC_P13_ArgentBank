@@ -48,10 +48,10 @@ function Header () {
                     </div>
                 ) : (
                     <div className='not-connected'>
-                        <NavLink className="main-nav-item" to='/login' >
-                            <i className="fa fa-user-circle"></i>
-                            <p>Sign In</p>
-                        </NavLink>
+                    <NavLink className="main-nav-item" to='/login' >
+                        <i className="fa fa-user-circle"></i>
+                        Sign In
+                    </NavLink>
                     </div>
                 )}
             </nav>
