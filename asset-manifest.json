@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/OC_P13_ArgentBank/static/css/main.f18b19a3.css",
-    "main.js": "/OC_P13_ArgentBank/static/js/main.d352bbfa.js",
+    "main.css": "/OC_P13_ArgentBank/static/css/main.10a8338c.css",
+    "main.js": "/OC_P13_ArgentBank/static/js/main.efdff4a8.js",
     "static/media/icon-security.png": "/OC_P13_ArgentBank/static/media/icon-security.1c819fa1007a5c53e6a9.png",
     "static/media/argentBankLogo.png": "/OC_P13_ArgentBank/static/media/argentBankLogo.e031a16c76ab9bbbf78a.png",
     "static/media/icon-chat.png": "/OC_P13_ArgentBank/static/media/icon-chat.e238539d82b5a5f63c33.png",
@@ -9,11 +9,11 @@
     "static/media/icon-money.png": "/OC_P13_ArgentBank/static/media/icon-money.8ec88bb1a5070fd6513a.png",
     "static/media/404-green.webp": "/OC_P13_ArgentBank/static/media/404-green.988dba81c1abc80a4243.webp",
     "index.html": "/OC_P13_ArgentBank/index.html",
-    "main.f18b19a3.css.map": "/OC_P13_ArgentBank/static/css/main.f18b19a3.css.map",
-    "main.d352bbfa.js.map": "/OC_P13_ArgentBank/static/js/main.d352bbfa.js.map"
+    "main.10a8338c.css.map": "/OC_P13_ArgentBank/static/css/main.10a8338c.css.map",
+    "main.efdff4a8.js.map": "/OC_P13_ArgentBank/static/js/main.efdff4a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.f18b19a3.css",
-    "static/js/main.d352bbfa.js"
+    "static/css/main.10a8338c.css",
+    "static/js/main.efdff4a8.js"
   ]
 }
