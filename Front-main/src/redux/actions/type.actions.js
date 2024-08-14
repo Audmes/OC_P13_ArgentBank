@@ -7,4 +7,4 @@ export const LOGOUT = "LOGOUT";
 /* USER PROFILE */
 
 export const GET_USERPROFILE = "GET_USERPROFILE"
-export const EDIT_USERNAME = "EDIT_USERNAME"
+export const EDIT_USERNAMES = "EDIT_USERNAMES"

@@ -1,4 +1,4 @@
-import { GET_USERPROFILE, EDIT_USERNAME } from "./type.actions";
+import { GET_USERPROFILE, EDIT_USERNAMES } from "./type.actions";
 
 /* User data recovery action */
 export const userProfile = (userData) => {
@@ -9,9 +9,9 @@ export const userProfile = (userData) => {
 }
 
 /* Username update action */
-export const updateUsername = (username) => {
+export const updateUsernames = (usernames) => {
     return {
-        type: EDIT_USERNAME,
-        payload: username,
+        type: EDIT_USERNAMES,
+        payload: usernames,
     }
 }
