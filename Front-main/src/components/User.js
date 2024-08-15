@@ -94,7 +94,7 @@ function User () {
                                     type="text"
                                     id="firstname"
                                     name="firstname"
-                                    defaultValue={firstName}
+                                    defaultValue={userData.firstname}
                                     onChange={(event) => setFirstName(event.target.value)}
                                     // disabled={true}
                                 />
@@ -105,7 +105,7 @@ function User () {
                                     type="text"
                                     id="lastname" 
                                     name="lastname"
-                                    defaultValue={lastName}
+                                    defaultValue={userData.lastname}
                                     onChange={(event) => setLastName(event.target.value)}
                                     // disabled={true}
                                 />
