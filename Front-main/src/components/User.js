@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // import { createAsyncThunk } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from "react-redux";
 import { updateUsernames } from '../redux/actions/user.actions.js';
@@ -9,11 +9,14 @@ function User () {
     const token = useSelector((state) => state.auth.token);
     const userData = useSelector((state) => state.user.userData);
 
+    const userDataFirstName = userData.firstname;
+    const userDataLastName = userData.lastname;
+
     /* Allows you to retrieve the data entered by the user in the form */
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
 
-    /* Manages the appearance of the username modification form */
+    /* Manages the appearance of the usernames modification form */
     const [display, setDisplay] = useState(true);
 
     /* Handle error message */
@@ -21,8 +24,8 @@ function User () {
 
     const dispatch = useDispatch();
 
-    /* Asynchronous username update function */
-    const handleSubmitUsernames = async (event) => {
+    /* Asynchronous form function */
+    const handleSubmit = async (event) => {
         event.preventDefault();
 
         /* Handle error message */
@@ -56,7 +59,9 @@ function User () {
                 const data = await response.json();
                 const userFirstName = data.body.firstName;
                 const userLastName = data.body.lastName;
+
                 console.log(userFirstName, userLastName);
+                
                 /* 
                     Checking that the query response is indeed retrieved
                     console.log(data) 
@@ -72,6 +77,13 @@ function User () {
             console.error(error);
         }
     }
+
+    useEffect(() => {
+		/* It's setting the newFirstName state to the userFirstName and the newLastName state to the
+		userLastName. */
+		setFirstName(userDataFirstName);
+		setLastName(userDataLastName);
+	}, [userDataFirstName, userDataLastName]);
     
     return (
         <div className="header">
@@ -79,14 +91,14 @@ function User () {
                 <div>
                     <h1>Welcome back 
                         <br />
-                        {userData.firstname} {userData.lastname} !
+                        {userDataFirstName} {userDataLastName} !
                     </h1>
                     <button className="edit-button" onClick={() => setDisplay(!display)}>Edit Name</button>
                 </div>
                 :
                 <div>
                     <h2>Edit user info</h2>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <div className="edits">
                             <div className="edit-input">
                                 {/* <label htmlFor="firstname">First name:</label> */}
@@ -94,7 +106,7 @@ function User () {
                                     type="text"
                                     id="firstname"
                                     name="firstname"
-                                    defaultValue={userData.firstname}
+                                    defaultValue={userDataFirstName}
                                     onChange={(event) => setFirstName(event.target.value)}
                                     // disabled={true}
                                 />
@@ -105,14 +117,14 @@ function User () {
                                     type="text"
                                     id="lastname" 
                                     name="lastname"
-                                    defaultValue={userData.lastname}
+                                    defaultValue={userDataLastName}
                                     onChange={(event) => setLastName(event.target.value)}
                                     // disabled={true}
                                 />
                             </div>
                         </div>
                         <div className="buttons">
-                            <button className="edit-username-button" onClick={ handleSubmitUsernames }>Save</button>
+                            <button className="edit-username-button" type="submit">Save</button>
                             <button className="edit-username-button" onClick={() => setDisplay(!display)}>Cancel</button>
                         </div>
                         {errorMessage && <p className="error-message">{errorMessage}</p>}
