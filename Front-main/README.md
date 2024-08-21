@@ -1,4 +1,4 @@
-![ArgentBank](/src/assets/images/argentBankLogo.webp)
+![ArgentBank](/Front-main/src/assets/images/argentBankLogo.webp)
 
 # ArgentBank 🏦💵
 
