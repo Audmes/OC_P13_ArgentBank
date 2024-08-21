@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/OC_P13_ArgentBank/static/css/main.10a8338c.css",
+    "main.css": "/OC_P13_ArgentBank/static/css/main.75651df8.css",
     "main.js": "/OC_P13_ArgentBank/static/js/main.d4c7e7cb.js",
     "static/media/bank-tree.webp": "/OC_P13_ArgentBank/static/media/bank-tree.07c4b6f634596ddfdf57.webp",
     "static/media/404-green.webp": "/OC_P13_ArgentBank/static/media/404-green.988dba81c1abc80a4243.webp",
@@ -9,11 +9,11 @@
     "static/media/icon-chat.webp": "/OC_P13_ArgentBank/static/media/icon-chat.98c41929146d9fa56251.webp",
     "static/media/icon-money.webp": "/OC_P13_ArgentBank/static/media/icon-money.8e5649a2bd2fb3ed4e71.webp",
     "index.html": "/OC_P13_ArgentBank/index.html",
-    "main.10a8338c.css.map": "/OC_P13_ArgentBank/static/css/main.10a8338c.css.map",
+    "main.75651df8.css.map": "/OC_P13_ArgentBank/static/css/main.75651df8.css.map",
     "main.d4c7e7cb.js.map": "/OC_P13_ArgentBank/static/js/main.d4c7e7cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.10a8338c.css",
+    "static/css/main.75651df8.css",
     "static/js/main.d4c7e7cb.js"
   ]
 }
