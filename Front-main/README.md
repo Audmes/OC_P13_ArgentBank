@@ -1,4 +1,64 @@
-# Getting Started with Create React App
+![ArgentBank](/src/assets/images/argentBankLogo.webp)
+
+# ArgentBank 🏦💵
+
+![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)
+![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)
+![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)
+[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://github.com/Audmes)
+[![React](https://img.shields.io/badge/react-20232a?style=for-the-badge&logo=react&logocolor=61dafb)](https://reactjs.org/)
+
+<a href="#installation-fr-">README</a>
+
+## Installation FR :
+
+### Procédure d'installation :
+
+Cloner le repository:
+
+-   `https://github.com/Audmes/OC_P13_ArgentBank`
+
+### Installation et lancement du Back-end :
+
+1. Allez dans le dossier "Back-main" :
+
+2. Installer toutes les dépendances pour le Back-end :
+
+-   `npm install` ou `yarn`
+
+3. Lancer le back-end sur le port 3001 (port par défaut) :
+
+-   `npm run dev:server` ou `yarn run dev`
+
+### Installation et lancement du Front-end :
+
+1. Allez dans le dossier "Front-main" :
+
+2. Installer toutes les dépendances pour Front-end :
+
+-   `npm install` ou `yarn`
+
+3. Lancer le Front-end sur le port 3000 (port par défaut) :
+
+-   `npm start` ou `yarn start`
+
+## Développé avec :
+
+-   [Visual Studio Code](https://code.visualstudio.com/) - Éditeur de texte
+-   [Sass](https://sass-lang.com/) - Préprocesseur CSS
+-   [React 18](https://fr.reactjs.org/) - Bibliothèque JavaScript libre développée par Facebook
+-   [Create React App](https://create-react-app.dev/) - Boîte à outils créée par Facebook, qui est la référence pour initier un projet React
+-   [React Router V6](https://reactrouter.com/) - Bibliothèque de routage pour React
+-   [Prop-types](https://www.npmjs.com/package/prop-types) - Un package utilisé pour documenter les types de propriétés prévus transmises aux composants React
+-   [Redux](https://redux.js.org/) - Bibliothèque JS de gestion d'état pour applications web
+-   [JSDoc](https://jsdoc.app/) - Générateur de documentation pour JavaScript
+-   [GitHub](https://github.com/) - Outil de gestion de versions
+
+## Auteur :
+
+**Audrey Mesnage** : [**GitHub**](https://github.com/Audmes/) - [**Portfolio**](https://amsprods.com/)
+
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
