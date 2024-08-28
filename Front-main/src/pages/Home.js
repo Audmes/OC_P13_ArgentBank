@@ -1,9 +1,9 @@
 import Hero from "../components/Hero";
 import HomeFeature from "../components/HomeFeature";
 
-import iconChat from "../assets/icon-chat.png";
-import iconMoney from "../assets/icon-money.png";
-import iconSecurity from "../assets/icon-security.png";
+import iconChat from "../assets/icons/icon-chat.webp";
+import iconMoney from "../assets/icons/icon-money.webp";
+import iconSecurity from "../assets/icons/icon-security.webp";
 
 /**
  * Render Page : Home

@@ -22,7 +22,7 @@ function App() {
 	const isConnected = useSelector((state) => state.auth.isConnected);
 
     return (
-        <BrowserRouter basename="/OC_P13_ArgentBank">
+		<BrowserRouter basename="/OC_P13_ArgentBank">
 			<Header />
 			<Routes>
 			    <Route 
