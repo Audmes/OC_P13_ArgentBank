@@ -10,6 +10,12 @@ export const isValidEmail = (email) => {
 };
 
 export const isValidPassword = (password) => {
-    const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{3,}$/; 
+    // const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{3,}$/; 
+    const regex = /^ *$/;
+    return regex.test(password);
+};
+
+export const isInvalidPassword = (password) => {
+    const regex = /^ *$/;
     return regex.test(password);
 };

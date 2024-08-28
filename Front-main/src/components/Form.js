@@ -2,18 +2,18 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { loginFailed, loginSuccess } from '../redux/actions/auth.actions.js';
-import { isValidEmail, isValidPassword } from '../utils/regex.js';
+import { isValidEmail, isInvalidPassword } from '../utils/regex.js';
 
 function Form () {
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
+
     /* Allows you to retrieve the data entered by the user in the form */
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [rememberMe, setRememberMe] = useState(false);
     /* Indicates an error message if data is invalid */
     const [errorMessage, setErrorMessage] = useState('');
-
-    const navigate = useNavigate();
-    const dispatch = useDispatch();
 
     /* Asynchronous form function */
     const handleSubmit = async (event) => {
@@ -25,7 +25,7 @@ function Form () {
             return;
         }
 
-        if (!isValidPassword(password)) {
+        if (isInvalidPassword(password)) {
             setErrorMessage("Invalid password");
             return;
         }
@@ -57,6 +57,7 @@ function Form () {
 
             } else {
                 const error = "Incorrect email/password"
+                setErrorMessage("Incorrect email/password");
                 dispatch(loginFailed(error));
             }
 
@@ -72,9 +73,9 @@ function Form () {
 
             <form onSubmit={handleSubmit}>
                 <div className='input-wrapper'>
-                    <label htmlFor='username'>Username</label>
+                    <label htmlFor='userEmail'>Email</label>
                     <input 
-                        id='username' 
+                        id='userEmail' 
                         type='text'
                         value={email}
                         onChange={(e) => setEmail(e.target.value)} 
@@ -82,9 +83,9 @@ function Form () {
                     />
                 </div>
                 <div className='input-wrapper'>
-                    <label htmlFor='password'>Password</label>
+                    <label htmlFor='userPassword'>Password</label>
                     <input 
-                        id='password' 
+                        id='userPassword' 
                         type='password'
                         value={password}
                         onChange={(e) => setPassword(e.target.value)} 
