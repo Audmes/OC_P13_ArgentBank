@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import { createAsyncThunk } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from "react-redux";
 import { updateUsernames } from '../redux/actions/user.actions.js';
 import { isValidName } from "../utils/regex.js";
@@ -91,7 +90,7 @@ function User () {
                 <div>
                     <h1>Welcome back 
                         <br />
-                        {userDataFirstName} {userDataLastName} !
+                        {firstName} {lastName} !
                     </h1>
                     <button className="edit-button" onClick={() => setDisplay(!display)}>Edit Name</button>
                 </div>
