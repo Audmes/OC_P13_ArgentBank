@@ -3,6 +3,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { updateUsernames } from '../redux/actions/user.actions.js';
 import { isValidName } from "../utils/regex.js";
 
+/**
+ * Render a form used to edit the user firstName and user lastName.
+ *
+ * @category Components
+ * @component
+ * @returns { React.Component } A React component
+ */
 function User () {
     /* Updates user data on profile page from state redux */
     const token = useSelector((state) => state.auth.token);
