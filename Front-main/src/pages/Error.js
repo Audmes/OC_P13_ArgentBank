@@ -2,7 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import GreenError from '../assets/images/404-green.webp';
 
-/* Error page if user uses unknown route */
+/**
+ * Render Page : Error
+ *
+ * @category Pages
+ * @component
+ * @returns { React.Component } A React component
+ */
 function Error () {
     return (
         <div className="error-page">

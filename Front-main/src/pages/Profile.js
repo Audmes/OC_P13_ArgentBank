@@ -1,11 +1,18 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { userProfile } from '../redux/actions/user.actions.js';
+
 import User from '../components/User.js';
 import AccountCard from '../components/AccountCard.js';
 import AccountCardData from '../datas/account-data.json';
+import { GET_USERPROFILE } from '../redux/actions/type.actions.js';
 
-/* User profile page */
+/**
+ * Render Page : Profile
+ *
+ * @category Pages
+ * @component
+ * @returns { React.Component } A React component
+ */
 function Profile () {
     const token = useSelector((state) => state.auth.token);
     const dispatch = useDispatch();
@@ -37,7 +44,7 @@ function Profile () {
                             lastname: data.body.lastName
                         }
                         /* Return user data in redux state */
-                        dispatch(userProfile(userData));
+                        dispatch({type: GET_USERPROFILE, payload: userData});
                     } else {
                         console.log("error while retrieving profile");
                     }
