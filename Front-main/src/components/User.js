@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { updateUsernames } from '../redux/actions/user.actions.js';
+// import { updateUsernames } from '../redux/actions/user.actions.js';
+import { EDIT_USERPROFILE } from "../redux/actions/type.actions.js";
 import { isValidName } from "../utils/regex.js";
 
 /**
@@ -13,10 +14,9 @@ import { isValidName } from "../utils/regex.js";
 function User () {
     /* Updates user data on profile page from state redux */
     const token = useSelector((state) => state.auth.token);
-    const userData = useSelector((state) => state.user.userData);
-
-    const userDataFirstName = userData.firstname;
-    const userDataLastName = userData.lastname;
+    // const userData = useSelector((state) => state.user.userData);
+    const userDataFirstName = useSelector((state) => state.user.userData.firstname);
+    const userDataLastName = useSelector((state) => state.user.userData.lastname);
 
     /* Allows you to retrieve the data entered by the user in the form */
     const [firstName, setFirstName] = useState('');
@@ -49,7 +49,7 @@ function User () {
             setErrorMessage("");
         }
 
-        console.log(firstName, lastName);
+        // console.log(firstName, lastName);
 
         try {
             const response = await fetch('http://localhost:3001/api/v1/user/profile', {
@@ -63,17 +63,22 @@ function User () {
 
             if (response.ok) {
                 const data = await response.json();
-                const userFirstName = data.body.firstName;
-                const userLastName = data.body.lastName;
+                // console.log(firstName, lastName);
 
-                console.log(userFirstName, userLastName);
+                const userData = {
+                    createdAt: data.body.createdAt,
+                    updatedAt: data.body.updatedAt,
+                    id: data.body.id,
+                    email: data.body.email,
+                    firstname: firstName,
+                    lastname: lastName
+                }
                 
                 /* 
                     Checking that the query response is indeed retrieved
                     console.log(data) 
                 */
-                dispatch(updateUsernames(userFirstName));
-                dispatch(updateUsernames(userLastName));
+                dispatch({type: EDIT_USERPROFILE, payload: userData});
                 setDisplay(!display);
             } else {
                 console.log("Invalid Fields")
@@ -85,7 +90,7 @@ function User () {
     }
 
     useEffect(() => {
-		/* It's setting the newFirstName state to the userFirstName and the newLastName state to the
+		/* It's setting the firstName state to the userFirstName and the lastName state to the
 		userLastName. */
 		setFirstName(userDataFirstName);
 		setLastName(userDataLastName);

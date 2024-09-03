@@ -1,4 +1,4 @@
-import { GET_USERPROFILE, EDIT_USERNAMES, LOGOUT } from "../actions/type.actions";
+import { GET_USERPROFILE, EDIT_USERPROFILE, LOGOUT } from "../actions/type.actions";
 
 /* Initial user state */
 const initialState = {
@@ -14,14 +14,11 @@ export const userReducer = (state = initialState, action ) => {
                 status: 'SUCCEEDED',
                 userData: action.payload
             }
-        case EDIT_USERNAMES: 
+        case EDIT_USERPROFILE: 
             return {
                 ...state,
                 status: "MODIFIED",
-                userData: {
-                    ...state.userData,
-                    usernames: action.payload
-                } 
+                userData: action.payload
             } 
         case LOGOUT: {
             return initialState;  
