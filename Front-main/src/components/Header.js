@@ -1,5 +1,4 @@
 import React from 'react';
-// import { createAsyncThunk } from '@reduxjs/toolkit';
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink, useNavigate } from 'react-router-dom';
 import logo from "../assets/images/argentBankLogo.webp";
@@ -24,8 +23,8 @@ function Header () {
     const signOut = () => {
         dispatch(logout());
         /* Take off for don't clear the storage */
-        // sessionStorage.clear();
-        // localStorage.clear();
+        sessionStorage.clear();
+        localStorage.clear();
         navigate('/');
     }
 

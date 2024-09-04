@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { loginFailed, loginSuccess } from '../redux/actions/auth.actions.js';
-import { isValidEmail, isInvalidPassword } from '../utils/regex.js';
+import { isValidEmail, isValidPassword } from '../utils/regex.js';
 
 function Form () {
     const navigate = useNavigate();
@@ -25,7 +25,7 @@ function Form () {
             return;
         }
 
-        if (isInvalidPassword(password)) {
+        if (isValidPassword(password)) {
             setErrorMessage("Invalid password");
             return;
         }

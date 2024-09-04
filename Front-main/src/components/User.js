@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-// import { updateUsernames } from '../redux/actions/user.actions.js';
 import { EDIT_USERPROFILE } from "../redux/actions/type.actions.js";
 import { isValidName } from "../utils/regex.js";
 
@@ -62,14 +61,12 @@ function User () {
             });
 
             if (response.ok) {
-                const data = await response.json();
-                // console.log(firstName, lastName);
-
+                // const data = await response.json();
                 const userData = {
-                    createdAt: data.body.createdAt,
-                    updatedAt: data.body.updatedAt,
-                    id: data.body.id,
-                    email: data.body.email,
+                    // createdAt: data.body.createdAt,
+                    // updatedAt: data.body.updatedAt,
+                    // id: data.body.id,
+                    // email: data.body.email,
                     firstname: firstName,
                     lastname: lastName
                 }

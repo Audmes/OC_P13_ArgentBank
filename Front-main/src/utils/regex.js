@@ -14,8 +14,3 @@ export const isValidPassword = (password) => {
     const regex = /^ *$/;
     return regex.test(password);
 };
-
-export const isInvalidPassword = (password) => {
-    const regex = /^ *$/;
-    return regex.test(password);
-};
