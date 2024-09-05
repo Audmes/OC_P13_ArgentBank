@@ -1,18 +1,19 @@
 swagger: "2.0"
 info:
-    title: Argent Bank Transaction API
     description: API model proposal for user transactions
     version: 2.0.0
+    title: Argent Bank Transaction API
     termsOfService: http://swagger.io/terms/
 host: localhost:3001
 basePath: /api/v2
+tags: 
+    - name: Transaction module
+      description: Everything about user transactions
 schemes:
-    - http
+    - https
 paths:
     /user/transactions:
         get:
-            security:
-                - Bearer: []
             tags:
                 - Transaction module
             summary: Transactions Current Month API
