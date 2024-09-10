@@ -85,3 +85,6 @@ Le front-end sera lancé à l'URL:
 -   [Redux](https://redux.js.org/) - Bibliothèque JS de gestion d'état pour applications web
 -   [JSDoc](https://jsdoc.app/) - Générateur de documentation pour JavaScript
 -   [GitHub](https://github.com/) - Outil de gestion de versions
+
+### Author:
+**Audrey Mesnage**: [GitHub](https://github.com/Audmes/) - [Portfolio](https://amsprods.com)
