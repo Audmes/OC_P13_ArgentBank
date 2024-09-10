@@ -48,13 +48,13 @@ Ce projet consiste à développer une application bancaire full-stack en utilisa
 
 ##### Installation et lancement du back-main :
 1. Aller dans le dossier "Back-end"
-2. Installer toutes les dépendances pour le back-end (voir le README).
+2. Installer toutes les dépendances pour le back-end (voir le [README](https://github.com/Audmes/OC_P13_ArgentBank/blob/master/Back-main/README.md)).
 3. Lancer le back-end sur le port 3001 (port par défaut) :
 -   `npm run dev:server` ou `yarn run dev:server`
 
 ##### Installation et lancement du front-main :
 1. Aller dans le dossier "Front-end"
-2. Installer toutes les dépendances pour le front-end (voir le README).
+2. Installer toutes les dépendances pour le front-end (voir le [README](https://github.com/Audmes/OC_P13_ArgentBank/blob/master/Front-main/README.md)).
 3. Lancer le front-end sur le port 3000 (port par défaut) :
 -   `npm start` ou `yarn start`
 
