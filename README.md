@@ -44,7 +44,7 @@ Ce projet consiste à développer une application bancaire full-stack en utilisa
 -   [Git](https://git-scm.com)
 -   [Node](https://nodejs.org/en/) pour les commandes npm ou [Yarn](https://yarnpkg.com/) pour les commandes yarn
 
--   Cloner le repository: `git clone https://github.com/Audmes/OC_P13_ArgentBank`
+-   Cloner le repository: `git clone https://github.com/Audmes/OC_P13_ArgentBank.git`
 
 ##### Installation et lancement du back-main :
 1. Aller dans le dossier "Back-end"
