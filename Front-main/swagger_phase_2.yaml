@@ -10,7 +10,8 @@ tags:
     - name: Transaction module
       description: Everything about user transactions
 schemes:
-    - http
+    - "https"
+    - "http"
 paths:
     /user/transactions:
         get:

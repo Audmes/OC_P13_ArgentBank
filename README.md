@@ -34,7 +34,16 @@ Ce projet consiste à développer une application bancaire full-stack en utilisa
 - Modéliser une API
 
 ### Informations complémentaires
-- Soutenance validé le :
+- Soutenance validé le : 16/09/2024
+
+#### Livrable
+
+##### Points forts :
+- Le powerpoint est très bien réalisé
+- Le projet est 100% fonctionnel
+- Bonne compréhension de redux
+
+Remarques : Bonne présentation, le powerpoint utilisé était clair et détaillé. Excellent projet.
 
 ### Liens
 - Swagger Editor : https://editor.swagger.io/
